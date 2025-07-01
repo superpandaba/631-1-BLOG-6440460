@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/cb627fd0-76a9-43e0-8cdf-dbb9154db7ce/resourceGroups/appsvc_linux_eastus/providers/Microsoft.Web/sites/Yuan-6440460-blog",
+    "appService.deploySubpath": "backend"
+}

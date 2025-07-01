@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布新文章</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>6440460 Blog Project</h1>
+        <nav>
+            <a href="index.html">返回首页</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>创作新文章</h2>
+        <form id="new-post-form">
+            <div>
+                <label for="title">文章标题:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div>
+                <label for="author">你的名字:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div>
+                <label for="content">文章内容:</label>
+                <textarea id="content" name="content" rows="10" required></textarea>
+            </div>
+            <button type="submit">发布</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yuan's Blog</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 

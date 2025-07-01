@@ -1,0 +1,51 @@
+{
+  "adminUser": {
+    "username": "admin",
+    "password": "password"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "title": "我的第一篇博客",
+      "author": "admin",
+      "date": "2025-07-01",
+      "content": "这是我使用我们共同开发的博客平台发布的第一篇文章！感觉非常棒！响应式设计让它在手机和电脑上看起来都很完美。",
+      "views": 233,
+      "comments": [
+        {
+          "id": 1,
+          "user": "访客小明",
+          "text": "沙发！这个博客看起来很酷！"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "关于响应式设计的思考",
+      "author": "admin",
+      "date": "2025-07-01",
+      "content": "响应式设计不仅仅是让网站在不同设备上都能用，更是为了提供一种无缝、一致的用户体验。我们需要关注断点、流式布局和弹性图片等关键技术。",
+      "views": 284,
+      "comments": []
+    },
+    {
+      "id": 3,
+      "title": "test",
+      "author": "test",
+      "date": "2025-07-01",
+      "content": "test 1",
+      "comments": [
+        {
+          "id": 1,
+          "user": "访客1",
+          "text": "test"
+        },
+        {
+          "id": 2,
+          "user": "访客2",
+          "text": "2"
+        }
+      ]
+    }
+  ]
+}

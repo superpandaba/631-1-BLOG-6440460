@@ -1,0 +1,320 @@
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 居中内容，并设置最大宽度，以适应大屏幕 */
+header, main, footer, section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-bottom: 4px solid #55aaff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+header nav a:hover {
+    background-color: #555;
+}
+
+.nav-btn {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* --- 文章列表样式 --- */
+.post-summary {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.post-summary:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post-summary h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #55aaff;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* --- 文章详情页样式 --- */
+.post-full h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.post-content {
+    margin-top: 20px;
+    line-height: 1.8; 
+}
+
+/* --- 文章元数据容器样式  --- */
+.post-meta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 15px 20px;
+    padding: 15px 0;
+    margin-top: 30px; 
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.post-meta-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 为操作按钮创建一个分组 */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.meta-btn {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #666;
+    transition: all 0.2s ease;
+}
+
+.meta-btn:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+}
+
+.meta-btn.delete-btn:hover {
+    background-color: #ffebee;
+    border-color: #e57373;
+    color: #c62828;
+}
+
+/* --- 评论区样式 --- */
+#comments-section {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 2px solid #eee;
+}
+
+.comment {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment strong {
+    color: #555;
+}
+
+/* --- 评论表单样式 --- */
+#new-comment-form {
+    margin-top: 30px;
+}
+
+#new-comment-form h3 {
+    margin-bottom: 10px;
+}
+
+#new-comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box; 
+    min-height: 80px;
+    resize: vertical;
+}
+
+#new-comment-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+}
+
+#new-comment-form button {
+    background-color: #55aaff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#new-comment-form button:hover {
+    background-color: #3388dd;
+}
+
+/* --- 响应式设计：媒体查询 --- */
+
+/* 当屏幕宽度小于等于 600px 时，应用以下样式 (适配手机) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, main, footer, section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    header nav a {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #new-comment-form,
+    #new-post-form {
+        text-align: center;
+    }
+
+    #new-comment-form button,
+    #new-post-form button {
+        width: 100%;
+        padding: 12px; 
+    }
+}
+
+/* --- 新建文章页面表单样式 --- */
+#new-post-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-top: 20px;
+}
+
+#new-post-form div {
+    margin-bottom: 20px;
+}
+
+#new-post-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+#new-post-form input[type="text"],
+#new-post-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+#new-post-form input[type="text"]:focus,
+#new-post-form textarea:focus {
+    outline: none;
+    border-color: #55aaff;
+    box-shadow: 0 0 0 3px rgba(85, 170, 255, 0.2);
+}
+
+#new-post-form button {
+    width: 100%;
+    background-color: #55aaff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#new-post-form button:hover {
+    background-color: #3388dd;
+} 
